@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Tax Calculator</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="form-group">
+            <label for="price">Enter the Income</label>
+            <input id="price" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="paidTax">Enter the Tax paid Amount</label>
+            <input id="paidTax" class="form-control" />
+        </div>
+        <button id="calculate" class="btn btn-primary">Calculate</button>
+
+        <table class="table mt-3">
+            <tbody>
+                <tr>
+                    <th scope="row">Income</th>
+                    <td>$<span id="Amount">0</span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Ontario Tax</th>
+                    <td>$<span id="OntarioTax">0</span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Federal Tax</th>
+                    <td>$<span id="FederalTax">0</span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Total Tax</th>
+                    <td>$<span id="TotalTax">0</span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Owing Tax</th>
+                    <td>$<span id="TaxOwing">0</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
